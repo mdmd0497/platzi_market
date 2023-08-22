@@ -1,14 +1,23 @@
 plugins {
 	id 'java'
+<<<<<<< HEAD
 	id 'org.springframework.boot' version '2.7.14'
 	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+=======
+	id 'org.springframework.boot' version '3.1.2'
+	id 'io.spring.dependency-management' version '1.1.2'
+>>>>>>> 20995954c86de208fa6b0b0af3bbdb40b5fcbf5e
 }
 
 group = 'com.platzi'
 version = '0.0.1-SNAPSHOT'
 
 java {
+<<<<<<< HEAD
 	sourceCompatibility = '11'
+=======
+	sourceCompatibility = '17'
+>>>>>>> 20995954c86de208fa6b0b0af3bbdb40b5fcbf5e
 }
 
 repositories {
@@ -18,7 +27,10 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+<<<<<<< HEAD
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+=======
+>>>>>>> 20995954c86de208fa6b0b0af3bbdb40b5fcbf5e
 }
 
 tasks.named('test') {
