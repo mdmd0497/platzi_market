@@ -9,35 +9,35 @@ public class Categoria{
     @Id
     @Column(name = "id_categoria")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer idCategoria;
 
-    @Column(name = "description")
-    private String description;
+    @Column(name = "descripcion")
+    private String descripcion;
 
     @Column(name = "estado")
-    private Boolean active;
+    private Boolean estado;
 
-    public Integer getId() {
-        return id;
+    public Integer getIdCategoria() {
+        return idCategoria;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setIdCategoria(Integer idCategoria) {
+        this.idCategoria = idCategoria;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDescripcion() {
+        return descripcion;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
-    public Boolean getActive() {
-        return active;
+    public Boolean getEstado() {
+        return estado;
     }
 
-    public void setActive(Boolean active) {
-        this.active = active;
+    public void setEstado(Boolean estado) {
+        this.estado = estado;
     }
 }

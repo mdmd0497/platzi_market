@@ -4,23 +4,16 @@ import javax.persistence.*;
 @Entity
 @Table(name = "clientes")
 public class Cliente {
+
     @Id
     private String id;
+    private String nombre;
+    private String apellidos;
+    private Long celular;
+    private String direccion;
 
-    @Column(name = "nombre")
-    private String firtsName;
-
-    @Column(name = "apellidos")
-    private String lastName;
-
-    @Column(name = "celular")
-    private Long cellphone;
-
-    @Column(name = "direccion")
-    private String address;
-
-    @Column(name = "correo_electronico")
-    private String email;
+    @Column(name="correo_electronico")
+    private String correoElectronico;
 
     public String getId() {
         return id;
@@ -30,43 +23,43 @@ public class Cliente {
         this.id = id;
     }
 
-    public String getFirtsName() {
-        return firtsName;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setFirtsName(String firtsName) {
-        this.firtsName = firtsName;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getApellidos() {
+        return apellidos;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
     }
 
-    public Long getCellphone() {
-        return cellphone;
+    public Long getCelular() {
+        return celular;
     }
 
-    public void setCellphone(Long cellphone) {
-        this.cellphone = cellphone;
+    public void setCelular(Long celular) {
+        this.celular = celular;
     }
 
-    public String getAddress() {
-        return address;
+    public String getDireccion() {
+        return direccion;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
-    public String getEmail() {
-        return email;
+    public String getCorreoElectronico() {
+        return correoElectronico;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setCorreoElectronico(String correoElectronico) {
+        this.correoElectronico = correoElectronico;
     }
 }
